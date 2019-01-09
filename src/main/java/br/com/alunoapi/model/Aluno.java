@@ -14,7 +14,7 @@ import org.springframework.data.annotation.Id;
  *
  * @author mateus
  */
-@Entity
+//@Entity
 public class Aluno {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -22,8 +22,7 @@ public class Aluno {
     private String nome;
     private String matricula;
 
-    public Aluno(long id, String nome, String matricula) {
-        this.id = id;
+    public Aluno(String nome, String matricula) {
         this.nome = nome;
         this.matricula = matricula;
     }
